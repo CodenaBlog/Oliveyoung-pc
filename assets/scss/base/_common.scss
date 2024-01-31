@@ -1,0 +1,41 @@
+// blind
+.blind{
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	position: absolute; 
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+/* 공통 부분 */
+.wrapper{
+    min-width:1180px;
+}
+.blind{position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    margin: -1px;
+}
+.common-inner{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+/* 본문 바로가기 버튼 */
+#skipNav a{
+    position: absolute;
+    width: 100%;
+    transform: translateY(-100%);
+    background: #9bce26;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+ }
+ #skipNav a:focus,
+ #skipNav a:active{
+    transform:translate(0);
+ }
